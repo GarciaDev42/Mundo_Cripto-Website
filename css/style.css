@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+/* Formatação geral da página */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Besley', sans-serif;
+}
+
+.ctPrincipal {
+    background-color: #dfdfdf;
+    display: flex;
+}
+
+.lateral {
+    margin-top: 35px;
+    margin-left: 45px;
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+/* Header */
+#logo {
+    width: 150px;
+}
+
+#idlogo p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#idlogo {
+    border-bottom: rgb(145, 145, 145) solid 2px;
+}
+
+/* Exemplo de jogos com cripto-moedas */
+.section {
+    margin-top: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.section_img {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 100%;
+    text-align: center;
+    border: rgb(145, 145, 145) 3px solid;
+}
+
+.section_img img {
+    width: 100%;
+    height: 20vh;
+}
+
+.section_description {
+    display: flex;
+}
+
+#div_text {
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+#div_img img {
+    height: 5vh;
+    width: 100%;
+}
+
+.section_description h1 {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.section_description img {
+    width: 60%;
+    border-radius: 100%;
+}
+
+/* Link para artigos sobre altcoins */
+.artigos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 2px solid rgb(145, 145, 145);
+    border-bottom: 2px solid rgb(145, 145, 145);
+    display: flex;
+}
+
+.artigos_img {
+    width: 20%;
+}
+
+.artigos_img img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.artigos_text {
+    margin-left: 18px;
+}
+
+.artigos_text h1 {
+    font-size: 15px;
+}
+
+.artigos_text a {
+    padding: 5%;
+    color: black;
+    font-size: 12px;
+    font-weight: 900;
+    
+}
+
+/* Recomendação de leitura */
+.ler_depois {
+    border-bottom: rgb(145, 145, 145) 3px solid;
+    margin-top: 30px;
+}
+
+.ler_depois h1 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.ler_depois p {
+    font-weight: 450;
+    margin-bottom: 20px;
+}
+
+.ler_depois a {
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid black 2px;
+    border-radius: 10%;
+    padding: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+.ler_text {
+    margin-bottom: 45px;
+}
+
+/* Feed de postagens do site */
+.feed {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.post {
+    background-color: white;
+}
+
+.header {
+    border-bottom: solid 2px rgb(145, 145, 145);
+    padding: 30px;
+}
+
+.header h1 {
+    font-weight: 900;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.img_post {
+    margin: 55px;
+}
+
+.img_post img {
+    height: 100%;
+    width: 100%;
+}
+
+.img_post p {
+    margin-top: 50px;
+}
+
+/* Interação nos posts */
+.interactive_icons {
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 5%;
+}
+
+#link {
+    width: 155%;
+}
+
+#link a {
+    border: black 2px solid;
+    border-radius: 10%;
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#icons {
+    width: 50%;
+    color: black;
+    text-align: end;
+    justify-content: flex-end;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+#icons a {
+    color: rgb(145, 145, 145);
+    text-align: end;
+    justify-content: flex-end;
+    font-weight: bolder;
+}
+
+#icons i {
+    border-left: 2px solid;
+    text-align: center;
+    width: 30%;
+    color: rgb(145, 145, 145);
+}
+
+/* breakpoint para telas em até 920px */
+@media(max-width:920px) {
+    .ctPrincipal,
+    .lateral,
+    .feed {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #idlogo {
+        text-align: center;
+    }
+
+    .section_lat1 {
+        display: flex;
+    }
+
+    .section_lat2 {
+        display: flex;
+    }
+
+    .section_img {
+        width: 50%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .feed {
+        margin: 10px;
+    }
+
+}
